@@ -1,4 +1,5 @@
 # Shopping Basket Price Calculator
+[![Build Status](https://travis-ci.org/ortaieb/shopping-basket-calculator.svg?branch=master)](https://travis-ci.org/ortaieb/shopping-basket-calculator)
 
 Submitted by: Or Taieb <or.taieb@gmail.com>
 
