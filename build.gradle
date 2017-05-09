@@ -1,0 +1,30 @@
+group 'com.ortaieb.exercises'
+version '0.0.1-SNAPSHOT'
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '3.3'
+  distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
+}
+
+apply plugin: 'java'
+apply plugin: 'findbugs'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.google.guava', name: 'guava', version: '21.0'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
+}
